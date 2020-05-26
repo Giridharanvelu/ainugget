@@ -1,0 +1,67 @@
+.testimonialWrapper {
+  padding: 50px 0 30px;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 0;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  img.quotation {
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    max-width: 170px;
+    @media (max-width: 767px) {
+      width: 150px;
+    }
+  }
+
+  .bgShape4 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+}
+
+//testimonial three
+.testimonialThreeWrapper {
+  .s2Tst {
+    background: transparent;
+    padding: 0;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+
+    > p {
+      background: #ffffff;
+      padding: 30px 20px;
+      position: relative;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+
+      .cornerShape {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+      }
+    }
+
+    .tstMeta {
+      padding-left: 20px;
+    }
+  }
+}

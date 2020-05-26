@@ -1,0 +1,14 @@
+.quotesWrapper {
+  padding: 50px 0;
+  @media (max-width: 1200px) {
+    padding: 30px 0 0;
+  }
+
+  .s2Tst {
+    &:hover {
+      -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+  }
+}

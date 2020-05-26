@@ -1,0 +1,37 @@
+.collapseItem{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05)!important;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px!important;
+  .collapseHeader{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #182538;
+    letter-spacing: 0;
+    padding: 11px 30px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease 0s;
+    &.Mui-expanded{
+      border-color: rgba(24, 37, 56, 0.1);
+    }
+    >div:first-child{
+      margin: 0;
+    }
+    i{
+      color: #1BDBAD;
+      font-size: 24px;
+    }
+  }
+  .collapseBody{
+    color: rgba(24, 37, 56, 0.8);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 0;
+    padding: 11px 30px;
+  }
+}

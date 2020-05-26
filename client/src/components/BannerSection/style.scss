@@ -1,0 +1,113 @@
+@import "../../mixin";
+
+.bannerSection {
+  margin: 50px 0;
+  padding: 150px 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  @media (min-width: 1201px) and (max-width: 1599px) {
+    padding: 130px 40px;
+  }
+  @media (max-width: 1200px) {
+    margin: 0;
+    padding: 120px 40px;
+  }
+  @media (max-width: 767px) {
+    padding: 80px 15px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #22c795 25%, #00ffbe 100%);
+    opacity: 0.9;
+  }
+
+  strong {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 9px;
+    color: #f9fbff;
+    text-transform: uppercase;
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 18px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    color: #FFFFFF;
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 34px;
+      line-height: 43px;
+    }
+    @media (max-width: 767px) {
+      font-size: 27px;
+      line-height: 41px;
+    }
+  }
+
+  .playButton {
+    margin-bottom: 40px;
+    height: 100px;
+    width: 100px;
+    padding: 26px;
+    border-radius: 50%;
+    border: 2px solid #f9fbff;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background: #0f6ce0;
+      border-color: #0f6ce0;
+      &:before{
+        animation: boomout 800ms ease-in-out forwards;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #ffffff;
+    }
+  }
+}
+
+@keyframes boomout {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}

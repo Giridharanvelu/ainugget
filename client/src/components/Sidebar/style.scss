@@ -1,0 +1,145 @@
+@import "../../mixin";
+
+.sidebar {
+  padding-top: 50px;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
+
+  .widget {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .widgetSearch {
+    position: relative;
+    z-index: 1;
+    form {
+      input {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(24, 37, 56, 0.6);
+        background: transparent;
+        border: none;
+        letter-spacing: 0;
+      }
+
+      i {
+        color: #1ADBAC;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+    .searchResults{
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      z-index: 9;
+      background: #ffffff;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      -moz-box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      li{
+        display: block;
+        &:last-child a{
+          border: none;
+          margin-bottom: 0;
+        }
+        a{
+          color: #333;
+          display: block;
+          font-size: 13px;
+          letter-spacing: 0;
+          margin: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #eef0f2;
+          &:hover{
+            color: $theme_color;
+          }
+          img{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            margin-right: 10px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .widgetRecentPost {
+    .rcPostLists {
+      @media (min-width: 600px) and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .rcSPost {
+        background: #ffffff;
+        margin-bottom: 20px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        @media (min-width: 600px) and (max-width: 767px) {
+          flex-basis: calc(100% * (1/2) - 20px);
+          margin: 0 10px 20px;
+        }
+
+        .content {
+          padding: 15px;
+
+          h2 {
+            a {
+              display: block;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 25px;
+              color: #182538;
+
+              &:hover {
+                color: $theme_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .widgetTitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #182538;
+    margin-bottom: 30px;
+  }
+
+  .widgetCategory{
+    ul{
+      li{
+        display: block;
+        a{
+          display: block;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 40px;
+          color: #182538;
+          letter-spacing: 0;
+          &:hover{
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

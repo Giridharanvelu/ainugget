@@ -1,0 +1,114 @@
+@import "../../mixin";
+.featuredWrapper{
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 30px 15px 15px;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 15px 15px;
+  }
+  .slick-slider{
+    margin: 0 -30px;
+    .slick-slide{
+      padding: 15px;
+    }
+  }
+  .featuredItem{
+    transition: all 0.3s ease 0s;
+    background: #ffffff;
+    padding: 48px 33px;
+    border-radius: 5px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding: 30px 20px;
+    }
+    &:hover{
+      @media (min-width: 992px){
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.03);
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 30px 15px;
+    }
+    .icon{
+      height: 60px;
+      width: 60px;
+      //background: rgba(70, 64, 221, 0.2);
+      border-radius: 20px;
+      margin-bottom: 35px;
+      display: flex;
+      img{
+        margin: auto;
+        width: 30px;
+      }
+    }
+    .content{
+      h2{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 33px;
+        color: #182538;
+        margin-bottom: 20px;
+        @media (min-width: 1201px) and (max-width: 1599px) {
+          font-size: 21px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          font-size: 20px;
+          line-height: 32px;
+        }
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+      p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        cursor: pointer;
+        @media (min-width: 768px) and (max-width: 991px) {
+          font-size: 14px;
+        }
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+        &:hover{
+          color: $theme_color;
+        }
+        i{
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .fsNav{
+    text-align: right;
+    margin-right: -17px;
+    @media (min-width: 1600px) {
+      margin-top: 10px;
+    }
+    li{
+      cursor: pointer;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      color: #026BFE;
+      line-height: 47px;
+      border-radius: 50%;
+      margin-left: 5px;
+      background: #C8DEFF;
+      font-size: 24px;
+      padding-left: 3px;
+      border: 2px solid #C8DEFF;
+      &:hover{
+        color: #026BFE;
+        background: transparent;
+      }
+    }
+  }
+}
