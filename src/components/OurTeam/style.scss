@@ -1,0 +1,54 @@
+.ourTeamWrapper{
+  padding: 50px 0;
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 30px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 20px 0 0;
+  }
+  .sTeam{
+    .thumb{
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      img{
+        transition: all 0.3s ease 0s;
+        transform: scale(1);
+      }
+      &:hover{
+        img{
+          transform: scale(1.02);
+        }
+      }
+    }
+    .content{
+      text-align: center;
+      h2>a{
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: #182538;
+        margin-bottom: 15px;
+        @media (min-width: 768px) and (max-width: 991px) {
+          font-size: 23px;
+          margin-bottom: 0;
+        }
+        @media (max-width: 767px) {
+          font-size: 21px;
+          margin-bottom: 10px;
+        }
+      }
+      p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(24, 37, 56, 0.8);
+      }
+    }
+  }
+}

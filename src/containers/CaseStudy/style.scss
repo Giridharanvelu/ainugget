@@ -1,0 +1,52 @@
+.caseWrapper{
+  padding: 50px 0;
+  @media (min-width: 768px) and (max-width: 1220px) {
+    padding: 30px 0 0;
+  }
+  @media (max-width: 767px) {
+    padding: 20px 0 0;
+  }
+  .singleBlog{
+    height: 100%;
+    .thumb{
+      position: relative;
+      z-index: 1;
+      .cat{
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #4640DD;
+        display: inline-block;
+        letter-spacing: 0;
+        padding: 12px 30px;
+        border-radius: 50px;
+      }
+    }
+    .content{
+      h4{
+        margin: 20px 0 20px;
+      }
+      p.text{
+        text-transform: capitalize;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+        color: rgba(24, 37, 56, 0.8);
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+      .cBtn{
+        margin-top: 30px;
+      }
+    }
+  }
+}
