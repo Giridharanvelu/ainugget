@@ -10,7 +10,7 @@ import './css/font-awesome.min.css';
 import './common.scss';
 import 'react-modal-video/scss/modal-video.scss';
 import "slick-carousel/slick/slick.css";
-import 'react-id-swiper/lib/styles/scss/swiper.scss';
+//import 'react-id-swiper/lib/styles/scss/swiper.scss';
 
 ReactDOM.render(
     <Provider store={store}>
