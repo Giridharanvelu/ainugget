@@ -8,7 +8,7 @@ import Hidden from "@material-ui/core/Hidden";
 import Logo from "../Logo";
 
 //import logo from "../../images/logo.svg";
-import logo from "../../desktop/ai-logo.jpg";
+import logo from "../../C:/Users/Sunil Pillai/ainugget/ainugget/ai-logo.jpg";
 
 import './style.scss';
 import Button from "@material-ui/core/Button";
