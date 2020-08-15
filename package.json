@@ -30,5 +30,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-sslify": "^1.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
